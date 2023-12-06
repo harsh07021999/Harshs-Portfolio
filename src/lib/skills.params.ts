@@ -5,6 +5,9 @@ import svelte from './md/svelte.md?raw'
 
 const s = (skill:Skill) => skill
 
+export type ArrayElementType<ArrayType extends readonly unknown[]> =
+	ArrayType extends readonly (infer ElementType)[] ? ElementType : never;
+
 const MY_SKILLS = [
 	s({
 		slug: 'js',

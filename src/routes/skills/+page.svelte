@@ -26,6 +26,7 @@
 				<Card
 					classes={['cursor-pointer decoration-none']}
 					tiltDegree={1}
+					href={`${base}/skills/${skill.slug}`}
 					bgImg={getAssetUrl(skill.logo)}
 				>
 					<p class="text-[var(--tertiary-text)]">{skill.name}</p>
