@@ -1,4 +1,5 @@
-import { Platform, type HomePageParams } from "./types";
+import { Platform, type HomePageParams, type SkillPageParams } from "./types";
+import MY_SKILLS from "./skills.params";
 
 export const NavBar = {
 	home: 'Home',
@@ -43,3 +44,8 @@ export const HOME: HomePageParams = {
 		}
 	]
 };
+
+export const SKILLS: SkillPageParams = {
+	title: 'Skills',
+	items: MY_SKILLS
+}

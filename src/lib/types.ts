@@ -39,3 +39,9 @@ export interface HomePageParams extends PageParams {
 	links: Array<HomeLink>;
 	skills?: Array<Skill>;
 }
+
+export interface PageWithSearchParams<T> extends PageParams {
+	items: Array<T>;
+}
+
+export type SkillPageParams = PageWithSearchParams<Skill>
