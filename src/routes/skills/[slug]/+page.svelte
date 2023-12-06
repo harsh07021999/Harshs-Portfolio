@@ -43,21 +43,7 @@
 				</div>
 			</div>
 			<div class="self-stretch mb-2">
-				<!-- <CardDivider /> -->
 			</div>
-			<!-- <div class="flex flex-row gap-1 self-stretch flex-wrap ">
-				<div class="px-10px">
-					{#each related as item}
-						<Chip
-							classes="inline-flex flex-row items-center justify-center"
-							href={`${base}${item.url}`}
-						>
-							<CardLogo src={item.img} alt={item.name} radius={'0px'} size={15} classes="mr-2" />
-							<span class="text-[0.9em]">{item.display}</span>
-						</Chip>
-					{/each}
-				</div>
-			</div> -->
 		</div>
 	{/if}
 </div>
