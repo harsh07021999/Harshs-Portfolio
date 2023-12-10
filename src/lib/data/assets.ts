@@ -35,6 +35,9 @@ const Assets = {
 	HTML: a('html.svg'),
 	Vite: a('vite.png'),
 	Jest: a('jest.png'),
+	College: a('college.png'),
+	Byjus: a('byjus.png'),
+	Toppr: a('toppr.png'),
 };
 
 export default Assets;

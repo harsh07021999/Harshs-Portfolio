@@ -63,6 +63,27 @@ const MY_SKILLS = [
 		description: svelte,
 		logo: Assets.Svelte,
 		name: 'Svelte'
+	}),
+	s({
+		slug: 'django',
+		color: 'yellow',
+		description: "django",
+		logo: Assets.Django,
+		name: 'Django'
+	}),
+	s({
+		slug: 'golang',
+		color: 'blue',
+		description: "golang",
+		logo: Assets.Go,
+		name: 'Golang'
+	}),
+	s({
+		slug: 'postgres',
+		color: 'blue',
+		description: "Postgres",
+		logo: Assets.PostgreSQL,
+		name: 'Postgres SQL'
 	})
 ];
 

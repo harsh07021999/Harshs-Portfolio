@@ -3,6 +3,7 @@ import MY_SKILLS from "./skills.params";
 import MY_PROJECTS from "./project.params";
 import MY_EXPERIENCES from "./experiences.params";
 import MY_EDUCATION from "./educatio.params";
+import { Icons } from "./utils";
 
 export const NavBar = {
 	home: 'Home',
@@ -20,32 +21,27 @@ export const HOME: HomePageParams = {
 	description:
 		'Hi, My Name is Harsh Vardhan, I am a Software Engineer having two and a half years of experience, working on large scale applications as well as involved in developing Software from scratch',
 	links: [
-		{ platform: Platform.GitHub, link: 'https://github.com/' },
+		{ platform: Platform.GitHub, link: 'https://github.com/harsh07021999' },
 		{
 			platform: Platform.Linkedin,
-			link: 'https://www.linkedin.com/'
-		},
-		{
-			platform: Platform.Twitter,
-			link: 'https://twitter.com/'
-		},
-		{
-			platform: Platform.StackOverflow,
-			link: 'https://stackoverflow.com/'
+			link: 'https://www.linkedin.com/in/harsh-vardhan-868314145/'
 		},
 		{
 			platform: Platform.Email,
-			link: 'riadh-adrani@hotmail.fr'
-		},
-		{
-			platform: Platform.Youtube,
-			link: 'https://www.youtube.com'
-		},
-		{
-			platform: Platform.Facebook,
-			link: 'https://www.facebook.com'
+			link: 'harshfebruary@gmail.com'
 		}
 	]
+};
+
+export const getPlatfromIcon = (platform: Platform): Icons => {
+	switch (platform) {
+		case Platform.GitHub:
+			return Icons.GitHub;
+		case Platform.Linkedin:
+			return Icons.LinkedIn;
+		case Platform.Email:
+			return Icons.Email;
+	}
 };
 
 export const SKILLS: SkillPageParams = {
