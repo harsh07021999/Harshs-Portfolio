@@ -1,5 +1,6 @@
-import { Platform, type HomePageParams, type SkillPageParams } from "./types";
+import { Platform, type HomePageParams, type SkillPageParams, type ResumePageParams, type ProjectPageParams } from "./types";
 import MY_SKILLS from "./skills.params";
+import MY_PROJECTS from "./project.params";
 
 export const NavBar = {
 	home: 'Home',
@@ -49,3 +50,13 @@ export const SKILLS: SkillPageParams = {
 	title: 'Skills',
 	items: MY_SKILLS
 }
+
+export const PROJECTS: ProjectPageParams = {
+	title: 'Projects',
+	items: MY_PROJECTS
+};
+
+export const RESUME: ResumePageParams = {
+	title: 'Resumé',
+	item: 'https://drive.google.com/file/d/14y4YZUstHndZBZ2-d9FdgJzTJoW9yieQ/view?usp=sharing'
+};

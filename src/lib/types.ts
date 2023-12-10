@@ -17,6 +17,23 @@ export interface PageParams {
 	title: string;
 }
 
+export interface Link {
+	to: string;
+	label: string;
+	newTab?: boolean;
+}
+
+export interface Project extends Item {
+	links: Array<Link>;
+	color: string;
+	period: {
+		from: Date;
+		to?: Date;
+	};
+	type: string;
+	skills: Array<Skill>;
+}
+
 export type Asset = string | { light: string; dark: string };
 
 export interface Item {
@@ -45,3 +62,9 @@ export interface PageWithSearchParams<T> extends PageParams {
 }
 
 export type SkillPageParams = PageWithSearchParams<Skill>
+
+export type ProjectPageParams = PageWithSearchParams<Project>;
+
+export interface ResumePageParams extends PageParams {
+	item: string;
+}
