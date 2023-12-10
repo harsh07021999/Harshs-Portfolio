@@ -5,7 +5,7 @@ import type { Project } from "./types";
 
 const MY_PROJECTS: Array<Project> = [
     {
-        slug: 'slick-portfolio-angular',
+        slug: 'my-portfolio',
 		color: '#5e95e3',
 		description:
 			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore non dolores voluptatibus vitae praesentium aperiam, iure laboriosam repellendus sunt explicabo pariatur totam enim, nihil animi quisquam. Sit vero quod laborum!',
@@ -13,7 +13,7 @@ const MY_PROJECTS: Array<Project> = [
 			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore non dolores voluptatibus vitae praesentium aperiam, iure laboriosam repellendus sunt explicabo pariatur totam enim, nihil animi quisquam. Sit vero quod laborum!',
 		links: [{ to: 'https://github.com/harsh07021999/Harshs-Portfolio', label: 'GitHub' }],
 		logo: Assets.AWS,
-		name: 'Slick Portfolio',
+		name: 'My Portfolio',
 		period: {
 			from: new Date()
 		},
