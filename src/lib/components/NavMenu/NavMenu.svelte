@@ -40,12 +40,12 @@
      			{/each}
      		</div>
      		<div class="flex flex-row self-stretch items-stretch gap-1 text-1.15em">
-     			<a
+     			<!-- <a
      				href={`${base}/search`}
      				class="text-inherit col-center self-stretch px-2 hover:bg-[color:var(--main-hover)]"
      			>
      				<UIcon icon="i-carbon-search" />
-     			</a>
+     			</a> -->
      			<button
      				class="bg-transparent text-1em border-none cursor-pointer hover:bg-[color:var(--main-hover)] text-[var(--secondary-text)] px-2"
      				on:click={() => toggleTheme()}

@@ -21,7 +21,8 @@
 		: 'now';
 </script>
 
-<Card color={project.color} href={`${base}/projects/${project.slug}`}>
+<Card color={project.color} >
+	<!-- href={`${base}/projects/${project.slug}`} -->
 	<img
 		class={`rounded-15px aspect-square`}
 		height={40}
