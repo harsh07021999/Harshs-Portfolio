@@ -45,6 +45,32 @@ export interface Item {
 	screenshots?: Array<{ src: string; label: string }>;
 }
 
+export enum ContractType {
+	FullTime = 'Full-time',
+	PartTime = 'Part-time',
+	SelfEmployed = 'Self-employed',
+	Freelance = 'Freelance',
+	Contract = 'Contract',
+	Internship = 'Internship'
+}
+
+export interface Experience extends Project {
+	company: string;
+	location: string;
+	contract: ContractType;
+}
+
+export interface Education extends Item {
+	organization: string;
+	location: string;
+	period: {
+		from: Date;
+		to?: Date;
+	};
+	subjects: Array<string>;
+	degree: string;
+}
+
 export interface Skill extends Omit<Item, 'shortDescription'> {
 	color: string;
 }
@@ -64,6 +90,10 @@ export interface PageWithSearchParams<T> extends PageParams {
 export type SkillPageParams = PageWithSearchParams<Skill>
 
 export type ProjectPageParams = PageWithSearchParams<Project>;
+
+export type ExperiencePageParams = PageWithSearchParams<Experience>;
+
+export type EducationPageParams = PageWithSearchParams<Education>;
 
 export interface ResumePageParams extends PageParams {
 	item: string;

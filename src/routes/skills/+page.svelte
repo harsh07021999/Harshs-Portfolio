@@ -3,11 +3,8 @@
     import { base } from '$app/paths';
     import { SKILLS } from '$lib/params';
     import UIcon from '$lib/components/Icon/UIcon.svelte';
-	import Card from '$lib/components/cards/Card.svelte';
+	import Card from '$lib/components/Card/Card.svelte';
 	import { getAssetUrl } from '$lib/data/assets';
-
-
-    export let data: {skill: Skill}
 	
 	const {items, title} = SKILLS
 

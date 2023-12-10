@@ -1,6 +1,8 @@
-import { Platform, type HomePageParams, type SkillPageParams, type ResumePageParams, type ProjectPageParams } from "./types";
+import { Platform, type HomePageParams, type SkillPageParams, type ResumePageParams, type ProjectPageParams, type ExperiencePageParams, type EducationPageParams } from "./types";
 import MY_SKILLS from "./skills.params";
 import MY_PROJECTS from "./project.params";
+import MY_EXPERIENCES from "./experiences.params";
+import MY_EDUCATION from "./educatio.params";
 
 export const NavBar = {
 	home: 'Home',
@@ -56,7 +58,17 @@ export const PROJECTS: ProjectPageParams = {
 	items: MY_PROJECTS
 };
 
+export const EXPERIENCES: ExperiencePageParams = {
+	title: 'Experiences',
+	items: MY_EXPERIENCES
+};
+
+export const EDUCATION: EducationPageParams = {
+	title: 'Education',
+	items: MY_EDUCATION
+}
+
 export const RESUME: ResumePageParams = {
 	title: 'Resumé',
-	item: 'https://drive.google.com/file/d/14y4YZUstHndZBZ2-d9FdgJzTJoW9yieQ/view?usp=sharing'
+	item: 'https://drive.google.com/file/d/14y4YZUstHndZBZ2-d9FdgJzTJoW9yieQ/preview'
 };

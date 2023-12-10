@@ -5,9 +5,10 @@
 
 </script>
 
-<div class="resume">
+<div class="resume" style="justify-content: center;" >
     {#if item}
-    <embed src={item} width="800px" height="2100px" />
+    <iframe title="Resume" src={item} width=100% height=1000px  allow="autoplay">
+    </iframe>
     {:else}
         <p>Ooops! no CV at the moment.</p>
     {/if}

@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { countMonths, getMonthName, getTimeDiff } from '$lib/utils/helpers';
 	import Chip from '../Chip/Chip.svelte';
-	import Card from '../cards/Card.svelte';
+	import Card from '../Card/Card.svelte';
 	import ChipIcon from '../Chip/ChipIcon.svelte';
 	import type { Project } from '$lib/types';
 	import { getAssetUrl } from '$lib/data/assets';

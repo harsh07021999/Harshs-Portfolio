@@ -1,7 +1,10 @@
 <script lang= "ts">
+	import MY_SKILLS from "$lib/skills.params";
+
     import { HOME } from '$lib/params'
     import MainTitle from '$lib/components/MainTitle/MainTitle.svelte'
-    const {name, lastName, description} = HOME
+	import Carousel from '$lib/components/Carousel/Carousel.svelte';
+    const {name, lastName, description, skills} = HOME
 </script>
 
 <div
@@ -13,4 +16,5 @@
 			{description}
 		</p>
     </div>
+	<Carousel items={skills ?? MY_SKILLS}></Carousel>
 </div>
