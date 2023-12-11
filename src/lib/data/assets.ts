@@ -17,7 +17,7 @@ const Assets = {
 	FastApi: a('fastapi'),
 	Flask: a('flask.svg'),
 	Go: a('go.svg'),
-	Kafka: a('kafka.svg'),
+	Kafka: a('kafka.png'),
 	Nginx: a('nginx.svg'),
 	Docker: a('docker.svg'),
 	Kubernetes: a('kubernetees.svg'),
@@ -38,6 +38,10 @@ const Assets = {
 	College: a('college.png'),
 	Byjus: a('byjus.png'),
 	Toppr: a('toppr.png'),
+	Compcart: a('compcart.png'),
+	Unknown: a('unknown.png'),
+	Jio: a('jio.png'),
+	SpringBoot: a('spring-boot.png'),
 };
 
 export default Assets;

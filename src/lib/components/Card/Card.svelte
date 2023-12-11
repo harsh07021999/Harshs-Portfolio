@@ -23,8 +23,6 @@
 			el.style.setProperty('--bg-color', bgColor);
 		}
 	}
-
-	// svelte typing is broken...
 	const onHover: MouseEventHandler<HTMLDivElement> = (ev) => {
 		const target = ev.currentTarget;
 

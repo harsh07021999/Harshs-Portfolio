@@ -18,7 +18,8 @@
 		? `${getMonthName(experience.period.to.getMonth())} ${experience.period.to.getFullYear()}`
 		: 'Present';
 
-	const period = `${from} - ${to} · ${months}`;
+	const period = `${from} - ${to}`;
+	// console.log(period, from, to, months);
 </script>
 
 <Card margin="0px 0px 20px 0px" tiltDegree={2} > 
@@ -43,7 +44,12 @@
 				</ChipIcon>
 			</div>
 			<div class="text-[var(--accent-text)] text-[0.9em] font-200">{period}</div>
-			<div class="experience-description">{experience.description}</div>
+			<div class="experience-description">
+				{#each experience.description as val }
+					<p>{val}</p>
+				{/each}
+			  </div>
+			  
 			<div class="flex flex-row flex-wrap mt-5">
 				{#each experience.skills as skill}
 					<ChipIcon

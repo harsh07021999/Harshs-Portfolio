@@ -41,7 +41,7 @@ export interface Item {
 	name: string;
 	logo: Asset;
 	shortDescription: string;
-	description: string;
+	description: Array<string>;
 	screenshots?: Array<{ src: string; label: string }>;
 }
 

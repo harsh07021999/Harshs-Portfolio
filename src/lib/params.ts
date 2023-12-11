@@ -2,7 +2,7 @@ import { Platform, type HomePageParams, type SkillPageParams, type ResumePagePar
 import MY_SKILLS from "./skills.params";
 import MY_PROJECTS from "./project.params";
 import MY_EXPERIENCES from "./experiences.params";
-import MY_EDUCATION from "./educatio.params";
+import MY_EDUCATION from "./education.params";
 import { Icons } from "./utils";
 
 export const NavBar = {

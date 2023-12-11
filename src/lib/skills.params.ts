@@ -16,25 +16,18 @@ export type ArrayElementType<ArrayType extends readonly unknown[]> =
 
 const MY_SKILLS = [
 	s({
-		slug: 'js',
-		color: 'yellow',
-		description: js,
-		logo: Assets.JavaScript,
-		name: 'Javascript'
-	}),
-	s({
-		slug: 'ts',
-		color: 'blue',
-		description: ts,
-		logo: Assets.TypeScript,
-		name: 'Typescript'
-	}),
-	s({
 		slug: 'java',
 		color: 'white',
 		description: java,
 		logo: Assets.Java,
 		name: 'Java'
+	}),
+	s({
+		slug: 'spring-boot',
+		color: 'green',
+		description: "Spring Boot",
+		logo: Assets.SpringBoot,
+		name: 'Spring Boot'
 	}),
 	s({
 		slug: 'cpp',
@@ -51,18 +44,18 @@ const MY_SKILLS = [
 		name: 'Python'
 	}),
 	s({
-		slug: 'reactjs',
-		color: 'cyan',
-		description: react,
-		logo: Assets.ReactJs,
-		name: 'React Js'
+		slug: 'js',
+		color: 'yellow',
+		description: js,
+		logo: Assets.JavaScript,
+		name: 'Javascript'
 	}),
 	s({
-		slug: 'svelte',
-		color: 'orange',
-		description: svelte,
-		logo: Assets.Svelte,
-		name: 'Svelte'
+		slug: 'ts',
+		color: 'blue',
+		description: ts,
+		logo: Assets.TypeScript,
+		name: 'Typescript'
 	}),
 	s({
 		slug: 'django',
@@ -79,12 +72,33 @@ const MY_SKILLS = [
 		name: 'Golang'
 	}),
 	s({
+		slug: 'reactjs',
+		color: 'cyan',
+		description: react,
+		logo: Assets.ReactJs,
+		name: 'React Js'
+	}),
+	s({
+		slug: 'svelte',
+		color: 'orange',
+		description: svelte,
+		logo: Assets.Svelte,
+		name: 'Svelte'
+	}),
+	s({
 		slug: 'postgres',
 		color: 'blue',
 		description: "Postgres",
 		logo: Assets.PostgreSQL,
 		name: 'Postgres SQL'
-	})
+	}),
+	s({
+		slug: 'kafka',
+		color: 'white',
+		description: "Kafka",
+		logo: Assets.Kafka,
+		name: 'Kafka'
+	}),
 ];
 
 export default MY_SKILLS;
