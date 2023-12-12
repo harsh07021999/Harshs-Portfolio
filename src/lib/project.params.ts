@@ -26,10 +26,10 @@ const MY_PROJECTS: Array<Project> = [
 		description:
 			['This is a Basic Computer Parts E-commerce website that was built using Django and HTML & CSS, Django Monolith'],
 		shortDescription:
-			'This is My Portfolio Project, here i have a list of all my achivements and experiences.',
+			'This is a Basic Computer Parts E-commerce website that was built using Django and HTML & CSS, Django Monolith',
 		links: [{ to: 'https://github.com/harsh07021999/Comp_Cart', label: 'GitHub' }],
 		logo: Assets.Compcart,
-		name: 'My Portfolio',
+		name: 'Comp Cart',
 		period: {
 			from: new Date(2020,5,12)
 		},
