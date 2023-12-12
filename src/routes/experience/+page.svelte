@@ -3,11 +3,16 @@
 	import { EXPERIENCES } from '$lib/params';
 	import type { Experience } from '$lib/types';
     import ExperienceCard from '$lib/components/Card/ExperienceCard.svelte';
+	import MainTitle from '$lib/components/MainTitle/MainTitle.svelte';
 
     const {items, title} = EXPERIENCES;
     let result: Array<Experience> = [...items]
 
 </script>
+
+<div class="px-2 sm:px-4 md:px-6 py-4 sm:py-8 md:py-12">
+	<MainTitle>{title}</MainTitle>
+</div>
 <div class="col items-center relative mt-10 flex-1">
 <div class="w-[0.5px] hidden lg:flex top-0 bottom-0 py-50px bg-[var(--border)] absolute rounded" />
 {#each result as job, index (job.slug)}

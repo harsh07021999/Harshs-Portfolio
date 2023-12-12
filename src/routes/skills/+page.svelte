@@ -5,12 +5,17 @@
     import UIcon from '$lib/components/Icon/UIcon.svelte';
 	import Card from '$lib/components/Card/Card.svelte';
 	import { getAssetUrl } from '$lib/data/assets';
+	import MainTitle from '$lib/components/MainTitle/MainTitle.svelte';
 	
 	const {items, title} = SKILLS
 
     const result: Array<Skill> = items
 
 </script>
+
+<div class="px-2 sm:px-4 md:px-6 py-4 sm:py-8 md:py-12">
+	<MainTitle>{title}</MainTitle>
+</div>
 
 {#if result.length === 0}
 		<div class="p-5 col-center gap-3 m-y-auto text-[var(--accent-text)] flex-1">

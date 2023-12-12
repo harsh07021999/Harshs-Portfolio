@@ -19,7 +19,10 @@ export const HOME: HomePageParams = {
 	name: 'Harsh',
 	lastName: 'Vardhan',
 	description:
-		'Hi, My Name is Harsh Vardhan, I am a Software Engineer having two and a half years of experience, working on large scale applications as well as involved in developing Software from scratch',
+		`Hello! I'm Harsh Vardhan, a Software Engineer with two and a half years of hands-on experience. 
+		My journey in software development is fueled by a genuine passion for learning. 
+		From contributing to large-scale applications to building software from the ground up, my focus is on continuous growth.
+		I am originally from Prayagraj, U.P. but am currently working from Navi Mumbai.`,
 	links: [
 		{ platform: Platform.GitHub, link: 'https://github.com/harsh07021999' },
 		{
@@ -41,6 +44,8 @@ export const getPlatfromIcon = (platform: Platform): Icons => {
 			return Icons.LinkedIn;
 		case Platform.Email:
 			return Icons.Email;
+		case Platform.Location:
+			return Icons.Location;
 	}
 };
 
