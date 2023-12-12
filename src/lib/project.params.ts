@@ -11,7 +11,7 @@ const MY_PROJECTS: Array<Project> = [
 			['This is My Portfolio Project, here i have a list of all my achivements and experiences.'],
 		shortDescription:
 			'This is My Portfolio Project, here i have a list of all my achivements and experiences.',
-		links: [{ to: 'https://github.com/harsh07021999/Harshs-Portfolio', label: 'GitHub' }, { to: 'https://aesthetic-hamster-1688d9.netlify.app/', label: 'Netlify'}],
+		links: [{ to: 'https://github.com/harsh07021999/Harshs-Portfolio', label: 'GitHub' }, { to: 'https://harshs-sktportfolio.netlify.app/', label: 'Netlify'}],
 		logo: Assets.Svelte,
 		name: 'My Portfolio',
 		period: {
