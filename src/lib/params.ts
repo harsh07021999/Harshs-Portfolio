@@ -1,9 +1,18 @@
-import { Platform, type HomePageParams, type SkillPageParams, type ResumePageParams, type ProjectPageParams, type ExperiencePageParams, type EducationPageParams } from "./types";
-import MY_SKILLS from "./skills.params";
-import MY_PROJECTS from "./project.params";
-import MY_EXPERIENCES from "./experiences.params";
-import MY_EDUCATION from "./education.params";
-import { Icons } from "./utils";
+import {
+	Platform,
+	type HomePageParams,
+	type SkillPageParams,
+	type ResumePageParams,
+	type ProjectPageParams,
+	type ExperiencePageParams,
+	type EducationPageParams
+} from './types';
+import MY_SKILLS from './skills.params';
+import MY_PROJECTS from './project.params';
+import MY_EXPERIENCES from './experiences.params';
+import MY_EDUCATION from './education.params';
+import { Icons } from './utils';
+import { base } from '$app/paths';
 
 export const NavBar = {
 	home: 'Home',
@@ -18,8 +27,7 @@ export const HOME: HomePageParams = {
 	title: 'Home',
 	name: 'Harsh',
 	lastName: 'Vardhan',
-	description:
-		`Hello! I'm Harsh Vardhan, a Software Engineer with two and a half years of hands-on experience. 
+	description: `Hello! I'm Harsh Vardhan, a Software Engineer with two and a half years of hands-on experience. 
 		My journey in software development is fueled by a genuine passion for learning. 
 		From contributing to large-scale applications to building software from the ground up, my focus is on continuous growth.
 		I am originally from Prayagraj, U.P. but am currently working from Navi Mumbai.`,
@@ -52,7 +60,7 @@ export const getPlatfromIcon = (platform: Platform): Icons => {
 export const SKILLS: SkillPageParams = {
 	title: 'Skills',
 	items: MY_SKILLS
-}
+};
 
 export const PROJECTS: ProjectPageParams = {
 	title: 'Projects',
@@ -67,9 +75,9 @@ export const EXPERIENCES: ExperiencePageParams = {
 export const EDUCATION: EducationPageParams = {
 	title: 'Education',
 	items: MY_EDUCATION
-}
+};
 
 export const RESUME: ResumePageParams = {
 	title: 'Resumé',
-	item: 'https://drive.google.com/file/d/14y4YZUstHndZBZ2-d9FdgJzTJoW9yieQ/preview'
+	item: `${base}/Harsh_s_resume.pdf`
 };
