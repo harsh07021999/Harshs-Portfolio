@@ -79,5 +79,5 @@ export const EDUCATION: EducationPageParams = {
 
 export const RESUME: ResumePageParams = {
 	title: 'Resumé',
-	item: `/Harsh_s_resume.pdf`
+	item: `https://drive.google.com/file/d/1wdKwmfEhmQHzks9hc-USpXS636qoHET_/view?usp=sharing`
 };
