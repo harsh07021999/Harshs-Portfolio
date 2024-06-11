@@ -79,5 +79,5 @@ export const EDUCATION: EducationPageParams = {
 
 export const RESUME: ResumePageParams = {
 	title: 'Resumé',
-	item: `${base}/Harsh_s_resume.pdf`
+	item: `/Harsh_s_resume.pdf`
 };
